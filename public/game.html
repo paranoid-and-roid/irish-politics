@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8" />
+    <title>Game Page</title>
+    <link rel = "stylesheet" href = "constituencies.css">
+</head>
+
+<body>
+
+<div id = "container">
+
+    <div id = "header">
+        <h1>Know your politicians</h1>
+    </div>
+
+    <div id = "nav">
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "game.html">Play a Game</a></li>
+        </ul>
+    </div>
+
+    <div id = "leftSide">
+        <div id = "text">
+<pre>
+See if you can remember the details from the list of politicians.
+Simply click the "Start" button below,and you have 60 seconds
+to identify the correct constituency and political party for
+each of the names and faces you see.
+</pre>
+            <div id = "click">Start</div>
+        </div>
+
+        <table id = "scoreTable">
+            <tr>
+                <th>Ranking</th>
+                <th>Your Name</th>
+                <th>Your Score</th>
+                <th>Date Achieved</th>
+            </tr>
+        </table>
+
+        <div id = "center">
+
+            <p>Select a constituency and a political party for each TD, and press the Submit button.</p>
+
+            <div id = "image"><img id = "mugShot" src = "" alt = "" /></div>
+            <div id = "tdName"><p></p></div><br>
+
+            <select id = "cons">
+                <option>Constituencies</option>
+                <option>Cork East</option>
+                <option>Cork North Central</option>
+                <option>Cork North West</option>
+                <option>Cork South Central</option>
+                <option>Cork South West</option>
+            </select>
+
+            <select id = "parties">
+                <option>Political Parties</option>
+                <option>Fianna Fail</option>
+                <option>Fine Gael</option>
+                <option>Labour</option>
+                <option>Sinn Fein</option>
+            </select>
+
+            <div id = "submit">Submit</div>
+        </div>
+    </div>
+
+    <div id = "rightSide">
+        Seconds Remaining:
+        <div id = "countDown"></div>
+        Your Score:
+        <div id = "keepScore"></div>
+    </div>
+
+</div>
+
+<script src = "http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src = "constituencies.js"></script>
+<script src = "index.js"></script>
+
+</body>
+</html>
