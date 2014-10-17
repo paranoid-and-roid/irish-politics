@@ -21,33 +21,45 @@
         </ul>
     </div>
 
-    <div id = "leftSide">
-        <div id = "text">
-<pre>
-See if you can remember the details from the list of politicians.
-Simply click the "Start" button below,and you have 60 seconds
-to identify the correct constituency and political party for
-each of the names and faces you see.
-</pre>
-            <div id = "click">Start</div>
+    <div id = "sidebar">
+        <img src = "images/ireland.jpg" />
+        <div id = "scores">
+            <p>Seconds Remaining:</p>
+            <div id = "countDown"></div>
+            <p>Your Score:</p>
+            <div id = "keepScore"></div>
         </div>
+    </div>
 
-        <table id = "scoreTable">
-            <tr>
-                <th>Ranking</th>
-                <th>Your Name</th>
-                <th>Your Score</th>
-                <th>Date Achieved</th>
-            </tr>
-        </table>
+    <div id = "intro">
 
-        <div id = "center">
+        <p>
+            See if you can remember the details from the list of politicians.
+            Simply click the "Start" button below,and you have 60 seconds
+            to identify the correct constituency and political party for
+            each of the names and faces you see.
+        </p>
 
-            <p>Select a constituency and a political party for each TD, and press the Submit button.</p>
+        <div id = "click">Start</div>
+    </div>
 
-            <div id = "image"><img id = "mugShot" src = "" alt = "" /></div>
-            <div id = "tdName"><p></p></div><br>
+    <table id = "scoreTable">
+        <tr>
+            <th>Ranking</th>
+            <th>Your Name</th>
+            <th>Your Score</th>
+            <th>Date Achieved</th>
+        </tr>
+    </table>
 
+    <div id = "center">
+
+        <p>Select a constituency and a political party for each TD, and press the Submit button.</p>
+
+        <div id = "image"><img id = "mugShot" src = "" alt = "" /></div>
+        <div id = "tdName"><p></p></div><br>
+
+        <form id = "form">
             <select id = "cons">
                 <option>Constituencies</option>
                 <option>Cork East</option>
@@ -64,21 +76,14 @@ each of the names and faces you see.
                 <option>Labour</option>
                 <option>Sinn Fein</option>
             </select>
+        </form>
 
-            <div id = "submit">Submit</div>
-        </div>
-    </div>
-
-    <div id = "rightSide">
-        Seconds Remaining:
-        <div id = "countDown"></div>
-        Your Score:
-        <div id = "keepScore"></div>
+        <div id = "submit">Submit</div>
     </div>
 
 </div>
 
-<script src = "http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 <script src = "constituencies.js"></script>
 <script src = "index.js"></script>
 

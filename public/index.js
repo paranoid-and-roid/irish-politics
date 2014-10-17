@@ -3,22 +3,30 @@ $.getJSON("constituencies.js", playGame);
 //THE FIRST PART OF THE FILE IS CONCERNED WITH THE GAME
 
 var score = 0;
-var seconds = 60;
+var seconds = 20;
 
 var playGame = function() {
     //The game begins with the appearance on the page of the central panel, which contains the image and the select boxes
-    $("#center").slideDown(1000);
 
+    $("#sidebar img").slideUp();
+    $("#intro").slideUp();
+    $("#scores").css("visibility", "visible");
+    $("#center").slideDown();
     var counter=setInterval(timer, 1000);
 
     function timer() {
         //Once the button is pressed, the 60-second countdown begins, and the clock appears on the right side.
-        $("#rightSide").show();
+
         seconds=seconds-1;
         if (seconds <= 0){
             clearInterval(counter);
             var name = prompt("Please enter your name", " "); //The game ends with the appearance of a prompt box.
-            $("#scoreTable").slideDown(1000); //The details of the game appear in a table which drops down.
+
+            $("#center").slideUp();
+            $("#scoreTable").slideDown(); //The details of the game appear in a table which drops down.
+            $("#scores").css("visibility", "hidden");
+            $("#sidebar img").slideDown();
+
             localStorage.name = name;
             localStorage.score = score;
 
@@ -72,6 +80,9 @@ var playGame = function() {
         }
         $("#keepScore").html(score); //The points are stored here.
 
+        $("#parties").val("Political Parties");
+        $("#cons").val("Constituencies");
+
         chooseRandom();
 
     }
@@ -97,9 +108,9 @@ for(var i = 0; i < data.constituencies.length; i++) {
 //This is the function. Clicking on a constituency name will cause an iteration through each link...
 $("#list li").each(function() {
     $(this).on("click", function() {
-        $("#intro").slideUp(500);
+        $("#intro").slideUp();
         $("#main div").empty().remove();
-        $("#main").slideUp(500);
+        $("#main").slideUp();
 
         //...And this causes the page to display the relevent info on the page
         for(var i = 0; i < data.constituencies.length; i++) {
@@ -111,7 +122,7 @@ $("#list li").each(function() {
 				<dd><strong>Political Party: </strong>"+data.constituencies[i].details[j].party+"</dd>\
 				<dd><strong>Votes Received on First Count: </strong>"+data.constituencies[i].details[j].firstCount+"</dd>\
 				<dd><strong>Elected on: </strong>"+data.constituencies[i].details[j].whenElected+"</dd></dl></div>";
-                    $("#main").slideDown(500);
+                    $("#main").slideUp();
                 }
             }
         }
