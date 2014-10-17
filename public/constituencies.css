@@ -1,6 +1,6 @@
 body {
-    background: #e7ffdf;
-    font-family: "Times New Roman";
+    background: #e7dfff;
+    font-family: "Times New Roman", sans-serif;
 }
 
 #container {
@@ -11,7 +11,7 @@ body {
 #header {
     text-align: center;
     padding: 20px;
-    background: #093;
+    background: #039;
     color: #fff;
     border-radius: 10px;
     margin-bottom: 40px;
@@ -20,7 +20,7 @@ body {
 #nav li{
     text-align: center;
     padding: 20px;
-    background: #093;
+    background: #039;
     color: #fff;
     border-radius: 10px;
     list-style: none;
@@ -41,7 +41,6 @@ body {
     display: none;
     width: 80%;
     float: left;
-
 }
 
 img {
@@ -68,7 +67,7 @@ dt strong{
 
 #list li {
     padding: 10px;
-    background: #093;
+    background: #039;
     border-radius: 5px;
     font-size: 15px;
     color: #fff;
@@ -86,8 +85,8 @@ a {
 .inner, #inner0, #inner1,#inner2,#inner3,#inner4 {
     width: 700px;
     margin: 40px auto;
-    background: #f2ffea;
-    border: 5px solid #1FC438;
+    background: #f2eaff;
+    border: 5px solid #1f38c4;
     border-radius: 5px;
     padding: 30px;
 }
@@ -110,7 +109,7 @@ a {
     width: 10%;
     margin: auto;
     padding: 10px;
-    background: #093;
+    background: #039;
     color: #fff;
     border-radius: 5px;
 }
@@ -128,9 +127,8 @@ a {
     width: 70%;
     margin: 40px auto;
     background: #fff;
-    border: 5px solid #1FC438;
+    border: 5px solid #1f38c4;
     border-radius: 5px;
-    padding-bottom: 40px;
     text-align: center;
     padding: 10px 10px 10px 30px;
 }
@@ -154,25 +152,21 @@ a {
     font-size: 30px;
     text-align: center;
     padding: 10px;
-    border: 5px solid #1FC438;
+    border: 5px solid #1f38c4;
     border-radius: 5px;
 }
 
 #text {
     font-size: 15px;
     text-align: center;
-    font-family: Calibri, "Times New Roman";
+    font-family: Calibri, "Times New Roman", sans-serif;
 }
-pre {
-    font-size: 20px;
-    text-align: center;
-    font-family: Calibri, "Times New Roman";
-}
+
 #submit {
     width: 10%;
     margin: 20px auto 0;
     padding: 10px;
-    background: #093;
+    background: #039;
     color: #fff;
     border-radius: 5px;
     text-align: center;

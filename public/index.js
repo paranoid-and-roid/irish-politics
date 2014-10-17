@@ -12,7 +12,7 @@ var playGame = function() {
     var counter=setInterval(timer, 1000);
 
     function timer() {
-        //Once the button is pressed, the 60-second countdown begins, and the clock appears on the left side.
+        //Once the button is pressed, the 60-second countdown begins, and the clock appears on the right side.
         $("#rightSide").show();
         seconds=seconds-1;
         if (seconds <= 0){

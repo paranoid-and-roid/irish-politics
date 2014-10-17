@@ -5,6 +5,15 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+group :development do
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+end
+
+group :production do
+  # gems specifically for Heroku go here
+  gem 'pg', '~> 0.17.1'
+  gem 'activerecord-postgresql-adapter', '0.0.1'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
