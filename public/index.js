@@ -8,7 +8,7 @@ var seconds = 20;
 var playGame = function() {
     //The game begins with the appearance on the page of the central panel, which contains the image and the select boxes
 
-    $("#sidebar img").slideUp();
+    $("#game_sidebar img").slideUp();
     $("#intro").slideUp();
     $("#scores").css("visibility", "visible");
     $("#center").slideDown();
@@ -25,7 +25,7 @@ var playGame = function() {
             $("#center").slideUp();
             $("#scoreTable").slideDown(); //The details of the game appear in a table which drops down.
             $("#scores").css("visibility", "hidden");
-            $("#sidebar img").slideDown();
+            $("#game_sidebar img").slideDown();
 
             localStorage.name = name;
             localStorage.score = score;
