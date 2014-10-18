@@ -21,7 +21,7 @@ body {
 }
 
 nav li {
-    width: 300px;
+    width: 70px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
@@ -29,7 +29,7 @@ nav li {
     color: #fff;
     border-radius: 5px;
     list-style: none;
-    display: inline;
+    display: inline-block;
 }
 nav a {
     text-decoration: none;
@@ -37,20 +37,25 @@ nav a {
     width: 300px;
 }
 
-#sidebar {
+#sidebar, #game_sidebar {
     float: left;
     width: 25%;
     margin-top: 40px;
-    text-align: center;
+
 }
-#sidebar img {
+#game_sidebar {
+    padding-left: 40px;
+}
+#game_sidebar img {
     width: 80%;
     height: 80%;
-    margin: 5%;
 }
 
 #scores {
     visibility: hidden;
+    text-align: center;
+    width: 80%;
+    float: left;
 }
 #main {
     display: none;
@@ -139,6 +144,7 @@ a {
 
 th, td {
     border: 1px solid #1f38c4;
+    padding: 5px;
 }
 
 #center {
@@ -171,7 +177,7 @@ th, td {
 }
 
 #intro {
-    width: 75%;
+    width: 71%;
     float: left;
     margin-top: 40px;
 }
@@ -183,7 +189,7 @@ th, td {
 }
 .upper_image {
     width: 300px;
-    margin: 20px 55px;
+    margin: 20px 30px 20px 50px;
 }
 .lower_image {
     width: 200px;
