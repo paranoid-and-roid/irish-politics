@@ -223,7 +223,8 @@ footer {
     border-bottom-left-radius: 5px;
     margin: 0 auto;
 }
-a.grey {
+
+.grey {
     background: #ccc;
     color: #333;
     border-radius: 4px;
