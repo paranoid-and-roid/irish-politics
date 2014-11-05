@@ -3,7 +3,7 @@ $.getJSON("constituencies.js", playGame);
 //THE FIRST PART OF THE FILE IS CONCERNED WITH THE GAME
 
 var score = 0;
-var seconds = 10;
+var seconds = 60;
 
 var playGame = function() {
     //The game begins with the appearance on the page of the central panel, which contains the image and the select boxes
