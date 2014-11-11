@@ -22,6 +22,10 @@ header {
     margin-bottom: 40px;
 }
 
+li {
+    list-style: none;
+}
+
 nav li {
     width: 67px;
     margin: 0 auto;
@@ -30,7 +34,6 @@ nav li {
     background: #047;
     color: #fff;
     border-radius: 5px;
-    list-style: none;
     display: inline-block;
 }
 nav a {
@@ -44,7 +47,6 @@ nav a {
     float: left;
 }
 #one_image img, #two_images img {
-
     width: 200px;
 }
 
@@ -62,7 +64,6 @@ nav a {
     float: left;
     width: 25%;
     margin-top: 40px;
-
 }
 #game_sidebar {
     padding-left: 40px;
